@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "MoltBond — Agent Reputation & Escrow",
   description: "On-chain reputation staking and escrow for AI agents on Base Sepolia",
+  other: {
+    "base:app_id": "6983bb7b50b31749410745c0",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
