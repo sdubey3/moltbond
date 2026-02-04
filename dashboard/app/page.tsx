@@ -100,7 +100,7 @@ export default async function Home() {
                     <td className="px-4 py-3 text-bond-muted">#{i + 1}</td>
                     <td className="px-4 py-3">
                       <div className="font-medium text-white">{agent.name}</div>
-                      <a href={`https://sepolia.basescan.org/address/${agent.address}`} target="_blank"
+                      <a href={`https://basescan.org/address/${agent.address}`} target="_blank"
                          className="text-xs text-bond-muted hover:text-bond-accent transition-colors">
                         {shortenAddr(agent.address)}
                       </a>
@@ -142,9 +142,9 @@ export default async function Home() {
                 </div>
                 <p className="text-sm text-bond-muted mb-3">{deal.description}</p>
                 <div className="flex items-center gap-4 text-xs text-bond-muted">
-                  <span>Creator: <a href={`https://sepolia.basescan.org/address/${deal.creator}`} target="_blank" className="text-bond-accent hover:underline">{shortenAddr(deal.creator)}</a></span>
+                  <span>Creator: <a href={`https://basescan.org/address/${deal.creator}`} target="_blank" className="text-bond-accent hover:underline">{shortenAddr(deal.creator)}</a></span>
                   <span>→</span>
-                  <span>Counterparty: <a href={`https://sepolia.basescan.org/address/${deal.counterparty}`} target="_blank" className="text-bond-accent hover:underline">{shortenAddr(deal.counterparty)}</a></span>
+                  <span>Counterparty: <a href={`https://basescan.org/address/${deal.counterparty}`} target="_blank" className="text-bond-accent hover:underline">{shortenAddr(deal.counterparty)}</a></span>
                   <span className="ml-auto">{deal.createdAt.toLocaleDateString()}</span>
                 </div>
                 {deal.status === "Active" && (

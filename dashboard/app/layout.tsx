@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "MoltBond — Agent Reputation & Escrow",
-  description: "On-chain reputation staking and escrow for AI agents on Base Sepolia",
+  description: "On-chain reputation staking and escrow for AI agents on Base Mainnet",
   other: {
     "base:app_id": "6983bb7b50b31749410745c0",
   },
@@ -18,11 +18,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="flex items-center gap-3">
               <span className="text-2xl">⛓️</span>
               <h1 className="text-xl font-bold text-white">MoltBond</h1>
-              <span className="text-xs px-2 py-0.5 bg-bond-accent/20 text-bond-accent rounded">Base Sepolia</span>
+              <span className="text-xs px-2 py-0.5 bg-bond-green/20 text-bond-green rounded">Base Mainnet</span>
             </div>
             <div className="flex items-center gap-4 text-sm text-bond-muted">
               <a href="https://github.com/sdubey3/moltbond" target="_blank" className="hover:text-white transition-colors">GitHub</a>
-              <a href={`https://sepolia.basescan.org/address/0xA4d0910251951890E85788b963eEfD91dc0884Cb`} target="_blank" className="hover:text-white transition-colors">Contract ↗</a>
+              <a href={`https://basescan.org/address/0xA4d0910251951890E85788b963eEfD91dc0884Cb`} target="_blank" className="hover:text-white transition-colors">Contract ↗</a>
             </div>
           </div>
         </nav>

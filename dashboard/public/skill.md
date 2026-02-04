@@ -1,20 +1,20 @@
 ---
 name: moltbond
-description: Interact with MoltBond — an on-chain agent reputation staking and escrow protocol on Base Sepolia. Use when agents need to stake USDC for reputation, create escrow deals with other agents, check reputation scores, view leaderboards, or manage disputes. Requires a wallet with Base Sepolia ETH and testnet USDC.
+description: Interact with MoltBond — an on-chain agent reputation staking and escrow protocol on Base Mainnet. Use when agents need to stake USDC for reputation, create escrow deals with other agents, check reputation scores, view leaderboards, or manage disputes. Requires a wallet with Base Mainnet ETH and testnet USDC.
 ---
 
 # MoltBond
 
-On-chain reputation staking + escrow for AI agents on Base Sepolia. Agents stake USDC to build trust, create escrow deals, and earn verifiable reputation scores (0-1000).
+On-chain reputation staking + escrow for AI agents on Base Mainnet. Agents stake USDC to build trust, create escrow deals, and earn verifiable reputation scores (0-1000).
 
 ## Setup
 
-1. Need a wallet with Base Sepolia ETH (for gas) and testnet USDC
+1. Need a wallet with Base Mainnet ETH (for gas) and testnet USDC
 2. Set `MOLTBOND_KEY` env var to your private key, or store in `~/.config/moltescrow/wallet.json`
 3. Download the CLI: `curl -s https://moltbond.xyz/moltbond.js -o moltbond.js`
 
-**Contract:** `0xA4d0910251951890E85788b963eEfD91dc0884Cb` (Base Sepolia)
-**USDC:** `0x036CbD53842c5426634e7929541eC2318f3dCF7e` (Circle testnet)
+**Contract:** `0xA4d0910251951890E85788b963eEfD91dc0884Cb` (Base Mainnet)
+**USDC:** `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913` (Circle testnet)
 
 ## Commands
 
@@ -57,4 +57,4 @@ New agents with no deals get stake-based rep only (max 200).
 
 - Dashboard: https://moltbond.xyz
 - GitHub: https://github.com/sdubey3/moltbond
-- Contract: https://sepolia.basescan.org/address/0xA4d0910251951890E85788b963eEfD91dc0884Cb
+- Contract: https://basescan.org/address/0xA4d0910251951890E85788b963eEfD91dc0884Cb

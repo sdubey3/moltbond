@@ -1,8 +1,8 @@
 import { createPublicClient, http, formatUnits } from "viem";
-import { baseSepolia } from "viem/chains";
+import { base } from "viem/chains";
 
 export const MOLTBOND_ADDRESS = "0xA4d0910251951890E85788b963eEfD91dc0884Cb" as const;
-export const USDC_ADDRESS = "0x036CbD53842c5426634e7929541eC2318f3dCF7e" as const;
+export const USDC_ADDRESS = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913" as const; // Real USDC on Base Mainnet
 
 export const MOLTBOND_ABI = [
   { inputs: [{ name: "_agent", type: "address" }], name: "agents", outputs: [{ name: "name", type: "string" },{ name: "staked", type: "uint256" },{ name: "dealsCompleted", type: "uint256" },{ name: "dealsFailed", type: "uint256" },{ name: "totalVolume", type: "uint256" },{ name: "registeredAt", type: "uint256" },{ name: "exists", type: "bool" }], stateMutability: "view", type: "function" },
@@ -18,8 +18,8 @@ export const ERC20_ABI = [
 ] as const;
 
 export const client = createPublicClient({
-  chain: baseSepolia,
-  transport: http("https://sepolia.base.org"),
+  chain: base,
+  transport: http("https://base-mainnet.public.blastapi.io"),
 });
 
 export const DEAL_STATUS = ["Active", "Completed", "Disputed", "Cancelled", "Expired"] as const;

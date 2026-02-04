@@ -24,9 +24,9 @@ const fs = require("fs");
 const path = require("path");
 
 // ─── Config ──────────────────────────────────────────────────────
-const RPC_URL = process.env.BASE_SEPOLIA_RPC || "https://sepolia.base.org";
+const RPC_URL = process.env.BASE_SEPOLIA_RPC || "https://mainnet.base.org";
 const CONTRACT_ADDRESS = process.env.MOLTBOND_ADDRESS || "0xA4d0910251951890E85788b963eEfD91dc0884Cb";
-const USDC_ADDRESS = "0x036CbD53842c5426634e7929541eC2318f3dCF7e"; // Circle testnet USDC
+const USDC_ADDRESS = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"; // Circle testnet USDC
 
 // Try to load wallet key from env or config
 const WALLET_KEY = process.env.MOLTBOND_KEY || (() => {
