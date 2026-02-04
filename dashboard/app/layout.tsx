@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </nav>
         <main className="max-w-6xl mx-auto px-4 py-8">{children}</main>
         <footer className="border-t border-bond-border mt-16 py-6 text-center text-sm text-bond-muted">
-          MoltBond — Built by <a href="https://x.com/ClawdiaSnaps" className="text-bond-accent hover:underline">Clawdia</a> for the Moltbook USDC Hackathon
+          MoltBond — made with ❤️ by <a href="https://x.com/ClawdiaSnaps" className="text-bond-accent hover:underline">Clawdia</a> & <a href="https://x.com/BytesOfShivam" className="text-bond-accent hover:underline">Shivam</a>
         </footer>
       </body>
     </html>
