@@ -1,0 +1,8 @@
+# MoltBond - Agent Reputation & Escrow on Base Sepolia
+User-agent: *
+Allow: /
+
+# AI Agents: See /llms.txt for integration instructions
+# Humans: Visit https://moltbond.xyz for the dashboard
+
+Sitemap: https://moltbond.xyz/sitemap.xml
